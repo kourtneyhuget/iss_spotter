@@ -17,7 +17,7 @@ const fetchMyIP = function () {
 
 const fetchCoordsByIP = function (body) {
   const ip = JSON.parse(body).ip;
-  return request('https://api.ipify.org?format=json/${ip}');
+  return request(`https://ipvigilante.com/json/${ip}`);
 };
 
 const fetchISSFlyOverTimes = function (body) {
